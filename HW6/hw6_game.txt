@@ -1,0 +1,40 @@
+CSE 413 Homework 6
+Jiashuo Zhang 1365330
+
+1. Edition in game.rb
+	- In class Monster, attributes was modified as an attr_accessor
+	- In 'delta_attr' of class Monster, print the monster's attribute right away
+	- In 'delta_attr' of class Player, print the player's attribute right away
+	- In 'do' of class Attack, edited so that the monster can be killed if its hp <= 0. Player can be killed if the hp <= 0. If the player is killed, exit and game is over.
+	- In class Location, I changed the doors to be attr_accessor so that we can more easily network locations in game.
+
+2. hw6a.rb
+	prompt to the user that the lantern is on right away after the user inputs "use lantern"
+
+3. hw6b.rb
+	New Location: 
+		Fountain
+			A special location where there's always a monster when you enter. If player beats the monster, player will be given a fountain potion(an ApplePotion with a different name, just treat it as special) when he or she exits this location.
+
+	New Item: 
+		RulerSword
+			Can be purchased in BlackSmithShop. Player can use it to increase ap. Use it twice can unequip the sword and your ap goes back to the original value(work the same way as lantern).
+		Wallet
+			Can be used only in BlackSmithShop. Player use wallet to buy sword. After player type "use wallet", the game show the things in store and ask player what to buy. If player already has it in inventory, purchase will fail.
+		ApplePotion
+			A potion can be used to increase hp. System prompts the hp to the console right away.
+
+	New Action:
+		Tame
+			If a monster's ap is < 3, there's a chance that player can tame it(random number used here to model possibility). After successfully taming it, player will see the monster in inventory.
+		Dispose
+			Player can dispose anything that's in inventory
+
+	8 Locations created in game: 
+		paccar, dark, redSquare, blackSmith, fountain, eeb, cse, and ima.
+	Items:
+		potion0, potion1, lantern, wallet
+		(Some class can create or have item when initialized.)
+	Monsters:
+		m0, m1, m2, m2
+

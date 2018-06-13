@@ -1,0 +1,194 @@
+
+C:\Users\JoshZ\Desktop\CSE 413\HW7>ruby hw7.rb
+1
+Number(1.0)
+
+EOL
+
+1.0
+Number(1.0)
+
+EOL
+
+1...2..3
+Number(1.0)
+
+Invalid Token(.)
+
+Invalid Token(.)
+
+Invalid Token(.)
+
+Number(2.0)
+
+Invalid Token(.)
+
+Invalid Token(.)
+
+Number(3.0)
+
+EOL
+
+1.0+2-*/()
+Number(1.0)
+
++
+
+Number(2.0)
+
+-
+
+*
+
+/
+
+(
+
+)
+
+EOL
+
+(1.2e3+0.3e+4)
+(
+
+Number(1200.0)
+
++
+
+Number(3000.0)
+
+)
+
+EOL
+
+0..0.1e-1
+Number(0.0)
+
+Invalid Token(.)
+
+Invalid Token(.)
+
+Number(0.01)
+
+EOL
+
+xyz+abc efg.e+1
+ID(xyz)
+
++
+
+ID(abc)
+
+ID(efg)
+
+Invalid Token(.)
+
+ID(e)
+
++
+
+Number(1.0)
+
+EOL
+
+1.2e-1 + x - y + ** **** z
+Number(0.12)
+
++
+
+ID(x)
+
+-
+
+ID(y)
+
++
+
+**
+
+**
+
+**
+
+ID(z)
+
+EOL
+
+x***y
+ID(x)
+
+**
+
+*
+
+ID(y)
+
+EOL
+
+listx
+listx
+
+EOL
+
+list
+list
+
+EOL
+
+clear
+clear
+
+EOL
+
+sqrt 2.0e1 + 2.3.3
+sqrt
+
+Number(20.0)
+
++
+
+Number(2.3)
+
+Invalid Token(.)
+
+Number(3.0)
+
+EOL
+
+!@#$%^&*()_+:;'
+Invalid Token(!)
+
+Invalid Token(@)
+
+Invalid Token(#)
+
+Invalid Token($)
+
+Invalid Token(%)
+
+Invalid Token(^)
+
+Invalid Token(&)
+
+*
+
+(
+
+)
+
+Invalid Token(_)
+
++
+
+Invalid Token(:)
+
+EOL
+
+exit
+exit
+
+Quitting...
+
+C:\Users\JoshZ\Desktop\CSE 413\HW7>
+
+

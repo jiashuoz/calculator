@@ -1,0 +1,4 @@
+ Extra Credit
+	PickUp: Can pick up things. But if it is a monster, player is not allowed to pick it up. Monster can only be tamed, not 'Picked Up'. But if player successfully tamed a monster, then it is okay to drop it here.
+
+	Drop: Can drop anything in your inventory. If the item is not in your inventory. 

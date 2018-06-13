@@ -1,0 +1,209 @@
+CSE413
+Jiashuo Zhang
+Test cases for Calculator
+
+
+C:\Users\JoshZ\Desktop\CSE 413\HW8>ruby calc.rb
+Hello! This is my Calculator program.
+
+Note: this program takes care of only some of the syntax error.
+
+For example, you could have extra parenthesis at the end of your statement and the program would not care about and simply give the result. If you input some invalid tokens, for example 1.2e++ or 1...2, program would dump it and ask for next statement.
+Have fun!
+
+The following is the basic syntax.
+*=======================================================================================*
+|Basic Operations:                                                                      |
+|               Add:                            16 + 4                                  |
+|               Sub:                            16 - 4                                  |
+|               Multiply                        16 * 4                                  |
+|               Divide                          16 / 4                                  |
+|               Power                           2 ** 4                                  |
+|               Square root                     sqrt(16)                                |
+|               Natural log                     log(10)                                 |
+|               Unary minus op                  -2 or -(2*3)                            |
+|                                                                                       |
+|A bit more complex:                                                                    |
+|               Complex computation             -(2*3**sqrt(x-4/2))                     |
+|               Multiple statements             (1 + 2) * 4 / 2; sqrt(log(1000))        |
+|               Assignment                      x = 2                                   |
+|               Clear Assignment                clear x                                 |
+|               List Assignments                list                                    |
+|               Get variable value              x                                       |
+|                                                                                       |
+|Interface:                                                                             |
+|               Exit                                    quit or exit                    |
+*=======================================================================================*
+1
+1.0
+
+1+3
+4.0
+
+10-3
+7.0
+
+2*4
+8.0
+
+8/2
+4.0
+
+1 + 2 + 3 +4
+10.0
+
+10 -5 - 2
+3.0
+
+1 * 2 * 3 * 4
+24.0
+
+16 / 2 / 2 / 2
+2.0
+
+sqrt(16)
+4.0
+
+log(100)
+4.605170185988092
+
+-log(sqrt(100))
+-2.302585092994046
+
+sqrt(log(1000))
+2.628260884878466
+
+PI
+3.141592653589793
+
+(10+2-1)*(2+1)/4
+8.25
+
+(10+2/2)**2
+121.0
+
+1+2/2
+2.0
+
+2/2+1
+2.0
+
+1+2*2
+5.0
+
+2*2+1
+5.0
+
+2**3+1
+9.0
+
+1+2**3
+9.0
+
+x = 10
+Variable Assignment: x = 10.0
+
+y = 20; z = 30
+Variable Assignment: y = 20.0
+Variable Assignment: z = 30.0
+
+list
+PI = 3.141592653589793
+x = 10.0
+y = 20.0
+z = 30.0
+
+
+10+x*y-(z**2)
+-690.0
+
+clear x; clear y
+Successfully deleted: x = 10.0
+Successfully deleted: y = 20.0
+
+list
+PI = 3.141592653589793
+z = 30.0
+
+
+-2
+-2.0
+
+-(1+3)
+-4.0
+
+-(2*5)
+-10.0
+
+-(10/4)
+-2.5
+
+x = 10
+Variable Assignment: x = 10.0
+
+-x + 1
+-9.0
+
+-x-1
+-11.0
+
+-x*x
+-100.0
+
+-x/4
+-2.5
+
+-x**x
+-10000000000.0
+
+-sqrt(x)
+-3.1622776601683795
+
+-sqrt(xyz)
+No such variable exists: xyz
+
+x = (1+2)))
+Variable Assignment: x = 3.0
+
+
+list123+1
+No such variable exists: list123
+1.0
+
+quit233+2*6
+No such variable exists: quit233
+12.0
+
+x
+3.0
+
+n
+No such variable exists: n
+
+-(2*3**sqrt(x-4/2))
+-6.0
+
+-(2*3**sqrt(10-4/2))
+-44.723181876860785
+
+1.22eee...
+Syntax error: Invalid Token
+Syntax error: Invalid Token
+
+Syntax error: Invalid Token
+Syntax error: Invalid Token
+
+Syntax error: Invalid Token
+Syntax error: Invalid Token
+
+
+1....
+Syntax error: Invalid Token
+Syntax error: Invalid Token
+
+Syntax error: Invalid Token
+Syntax error: Invalid Token
+
+1.2e+++2
+Syntax error: Invalid Token
+Syntax error: Invalid Token
